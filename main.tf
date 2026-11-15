@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket-youssef-unique-2026"
+  bucket = var.bucket_name
 
   tags = {
     Name        = "My bucket"
